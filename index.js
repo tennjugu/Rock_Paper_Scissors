@@ -44,6 +44,14 @@ function game() {
 
         const round = playRound(playerSelection,computerSelection)
         console.log(round)
+        if (round === "scissors beats paper, player wins!" || round === "paper beats rock, player wins!" || round === "rock beats scissors, player wins!") {
+            playerPoint++
+        }
+        else if (round === "rock beats scissors, computer wins!" || round === "scissors beats paper, computer wins!" || round === "paper beats rock, computer wins!") {
+            computerPoint++
+        }
+        console.log(`playerPoint: ${playerPoint}`)
+        console.log(`computerPoint: ${computerPoint}`)
     }
 
 }
