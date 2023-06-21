@@ -6,10 +6,7 @@ const choices= ["rock", "paper", "scissors"]
 const choicesLength = choices.length
 //console.log(getComputerChoice(choices))
 
-let getPlayerChoice = prompt("Pick between rock, paper or scissors")
-console.log(getPlayerChoice.toLowerCase())
-if (getPlayerChoice.toLowerCase() != "rock" && getPlayerChoice.toLowerCase() != "paper" && getPlayerChoice.toLowerCase() != "scissors")
-alert("Your choice was not rock, paper or scissors. Try again")
+
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) { 
@@ -32,3 +29,14 @@ const playerSelection = getPlayerChoice.toLowerCase()
 const computerSelection = getComputerChoice(choices)
 console.log(playRound(playerSelection, computerSelection))
 
+function game() {
+    let computerPoint = 0
+    let playerPoint = 0
+    for (let i = 0; i < 5; i++) {
+        const getPlayerChoice = prompt("Pick between rock, paper or scissors")
+        console.log(getPlayerChoice.toLowerCase())
+        if (getPlayerChoice.toLowerCase() != "rock" && getPlayerChoice.toLowerCase() != "paper" && getPlayerChoice.toLowerCase() != "scissors")
+        alert("Your choice was not rock, paper or scissors. Try again")
+    }
+
+}
