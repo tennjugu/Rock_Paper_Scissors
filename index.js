@@ -53,6 +53,14 @@ function game() {
         console.log(`playerPoint: ${playerPoint}`)
         console.log(`computerPoint: ${computerPoint}`)
     }
-
+    if (playerPoint === computerPoint) {
+        console.log("It's a draw!")
+    }
+    else if (playerPoint > computerPoint) {
+        console.log("You won the game!")
+    }
+    else {
+        console.log( "Computer won the game!")
+    }
 }
 game()
